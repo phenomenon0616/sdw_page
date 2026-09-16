@@ -1,0 +1,238 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html,body{
+    scroll-behavior: smooth;
+    /*a태그 페이지 내에서 이동시 부드럽게전환 하는 속성*/
+    font-family: '맑은 고딕',sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+button{cursor: pointer;}
+
+.header{
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    height: 700px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+    display: flex;
+}
+.all_wrap{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    background-color: #999;
+}
+.header_img{
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_img>img{
+    width: 120%;
+}
+.header_text{
+    width: 65%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 260px;
+}
+.header_text>h2{
+    width: 60%;
+    font-size: 80px;
+    color: #6db9ff;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu>li>a{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu>li{
+    padding: 20px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #4bf7e9;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+.menu>li:hover{
+    background-color: #333;
+    color: #fff;
+}
+ /*about 영역 css*/
+ .about{
+    width: 100%;
+    height: 800px;
+    padding: 80px 40px;
+    display: flex;
+    gap: 50px;
+    background-color: #fff;
+    
+ }
+ .about_img{
+    width: 35%;
+    height: 100%;
+    background: url(../img/about_img.webp) center / cover no-repeat;
+    border-radius: 30px;
+ }
+ .about_text{
+    width: 65%;
+    height: 100%;
+ }
+ .about_text>h2{
+    width: 100%;
+    line-height: 200%;
+    font-size: 60px;
+    border-bottom: 2px solid #4bf7e9;
+ }
+ .about_text>p{
+    width: 75%;
+    font-size: 22px;
+    line-height: 200%;
+    margin-top: 20px;
+ }
+ /*SKILL 스타일*/
+ .skill{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 50px;
+    border-top: 2px solid #d9d9d9;
+ }
+
+ .skill>h2{font-size: 60px;}
+ .skill_icon{
+    display: flex;
+    justify-content: space-between;
+ }
+ .skill_icon>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+    font-weight: bold;
+ }
+ .skill_icon>a:nth-child(1){
+    margin: 30px;
+    background-color: #6db9ff;
+    border-radius: 30px;
+    font-size: 80px;
+ }
+ .skill_icon>a:nth-child(2){
+    margin: 30px;
+    background-color: orange;
+    border-radius: 30px;
+    font-size: 80px;
+ }
+ .skill_icon>a>img{
+    width: 100%;
+ }
+ .skill_icon span{
+    display: block;
+    font-size: 24px;
+ }
+ /*포트폴리오 스타일*/
+ .portfolio{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #999;
+ }
+ .p_title{font-size: 60px; font-weight: bold;}
+ .p_box{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    margin-top: 40px;
+    border-radius: 30px;
+ }
+ .card img{width: 80%; transition: all 0.3s;}
+  .card>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+ }
+ .card>a:hover img{
+    scale: 1.12;
+ }
+ .footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-top: 1px solid #333;
+    padding: 50px 50px 130px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .icon_box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .footer>h2{
+   font-size: 60px;
+   font-weight: bold;
+ }
+ .footer>p{
+   font-size: 35px;
+   margin: 20px 0 20px 0;
+ }
+ .icon_box{
+   width: 100%;
+   margin-top: 50px;
+   font-size: 20px;
+ }
+ .icon_box a{
+   display: block;
+   width: 100px;
+   height: 100px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+ .icon_box>li>a>img{
+   width: 80px;
+   margin-bottom: 30px;
+ }
+ .s_text{
+   width: 150px;
+   text-align: center;
+ }

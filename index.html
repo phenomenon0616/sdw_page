@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebSite_kjb</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+      <div class="header_img">
+        <img src="./img/header.img.webp" alt="헤더 이미지">
+      </div>
+      <div class="header_text">
+        <h2>MY WEBSITE PORTFOLIO</h2>
+        <ul class="menu">
+            <li><a href="#about_a">ABOUT</a></li>
+            <li><a href="#skill_a">SKILLS</a></li>
+            <li><a href="#portfolio_a">PORTFOLIO</a></li>
+            <li><a href="#contact_a">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="all_wrap">
+        <section class="about" id="about_a">
+            <div class="about_img">
+                <!-- 이미지는 css속성으로 들어갑니다. -->
+            </div>
+            <div class="about_text">
+                <h2>ABOUT ME</h2>
+                <p>안녕하십니까 저는 서단원입니다.
+                저는 엑셀과 파워포인트, 한글에 능통하며
+                여러 분야에 있어 얕고 넓은 지식을 가지고 있습니다.
+                세상에 제 이름을 널리 알리기 위해 열심히 하겠습니다. </p>
+            </div>
+        </section>
+
+        <!-- skill마크업 부분 -->
+         <section class="skill" id="skill_a">
+            <h2>SKILL</h2>
+            <div class="skill_icon">
+                <a href="#">Ps<span>Photoshop</span></a>
+                <a href="#">Ai<span>Illustrator</span></a>
+                <a href="#">
+                    <img src="./img/Excel.svg" alt="html로고">
+                    <span>HTML</span>
+                </a>
+                <a href="#">
+                    <img src="./img/HTML.svg" alt="CSS로고">
+                    <span>CSS</span>
+                </a>
+            </div>
+         </section>
+
+         <!-- portfolio 부분 마크업 -->
+          <section class="portfolio" id="portfolio_a">
+            <h2 class="p_title">PORTFOLIO</h2>
+            <ul class="p_box">
+                <li class="card">
+                    <a href="#">
+                        <img src="./img/PORTFOLIO1.webp" alt="포폴썸네일">
+                        <h2>VOCALOID</h2>
+                        <p>카사네 테토에 대한 설명이 기재된 사이트</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <img src="./img/PORTFOLIO2.webp" alt="포폴썸네일">
+                        <h2>VOCALOID</h2>
+                        <p>GUMI에 대한 설명이 기재된 사이트</p>
+                    </a>
+                </li>
+                <li class="card">
+                    <a href="#">
+                        <img src="./img/PORTFOLIO3.webp" alt="포폴썸네일">
+                        <h2>VOCALOID</h2>
+                        <p>하츠네 미쿠에 대한 설명이 기재된 사이트</p>
+                    </a>
+                </li>
+            </ul>
+          </section>
+
+            <section class="footer" id="contact_a">
+                <h2>CONTACT</h2>
+                <p>Let's work together!</p>
+                <ul class="icon_box">
+                    <li>
+                        <a href="#"><img src="./img/phone_image.jpg" alt="아이콘"></a>
+                        <span>phone number</span>
+                        <span class="s_text">01031473244</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./imges/contact_icon1.png" alt="아이콘"></a>
+                        <span>e-mail</span>
+                        <span class="s_text">kitty66390@gmail.com</span>
+                    </li>
+                </ul>
+            </section>
+    </div><!-- 전체 감싸주는 최상위 부모 -->
+</body>
+</html>
